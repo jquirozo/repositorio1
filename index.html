@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="js/cordova-2.1.0.js" type="text/javascript"></script>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js"></script>
+<script src="js/func.js" type="text/javascript"></script>
+
+</head> 
+<body> 
+
+<div data-role="page" id="home">
+	<div data-role="header">
+		<h1>Notificaciones</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#beep">Sonido del dispositivo</a></li>
+            <li><a href="#vibrate">Vibraci&oacute;n</a></li>
+			<li><a href="#alert">Alerta</a></li>
+            <li><a href="#confirm">Confirmacion</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>Pr&aacute;ctica de PhoneGap</h4>
+	</div>
+</div>
+
+<div data-role="page" id="beep">
+	<div data-role="header">
+		<h1>Sonidos del dispositivo</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+        	<li class="btn b1">1 Beep</li>
+        	<li class="btn b2">2 Beeps</li>
+        	<li class="btn b5">5 Beeps</li>                        
+        </ul>                
+        	
+	</div>
+	<div data-role="footer">
+		<h4>Pie de p&aacute;gina</h4>
+	</div>
+</div>
+
+<div data-role="page" id="vibrate">
+	<div data-role="header">
+		<h1>Vibraciones</h1>
+	</div>
+	<div data-role="content">	
+		
+         <div data-role="controlgroup" data-type="horizontal" class="localnav">
+				<!--<li class="btn v1"><a data-role="button" >1 vibraci&oacute;n</a></li>
+				<li class="btn v2"><a data-role="button" >2 vibraciones</a></li>
+                -->
+                <a class="btn v1" data-role="button" >1 vibraci&oacute;n</a>
+				<a class="btn v2" data-role="button" >2 vibraciones</a>
+                
+			</div>	
+        		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de p&aacute;gina</h4>
+	</div>
+</div>
+
+<div data-role="page" id="alert">
+	<div data-role="header">
+		<h1>Página cuatro</h1>
+	</div>
+	<div data-role="content">	
+   		<div id="right" style="width:100%; height:100%; background-color: #999;"></div>
+<!--        <input type="range" name="slider-1" id="slider-1" value="0" min="0" max="100" />-->        
+        		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de p&aacute;gina</h4>
+	</div>
+</div>
+
+<div data-role="page" id="confirm">
+	<div data-role="header">
+		<h1>mesanje de confirmacion</h1>
+	</div>
+	<div data-role="content">	
+   		<div id="left" style="width:100%; height:100%; background-color: #999;"></div>
+        
+        <!--<input type="range" name="slider-1" id="slider-1" value="0" min="0" max="100" />-->
+        
+        		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de p&aacute;gina</h4>
+	</div>
+</div>
+
+
+</body>
+</html>
